@@ -127,8 +127,6 @@ nnoremap <leader>doc <cmd>DashWord<cr>
 
 so ~/.config/nvim/plug_config.vim
 
-" NOTE: You can use other key to expand snippet.
-
 " Expand
 imap <expr> <C-l>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-l>'
 smap <expr> <C-l>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-l>'
@@ -142,7 +140,6 @@ imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab
 smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
 imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
 smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
-
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
@@ -159,4 +156,3 @@ inoremap <silent><c-t> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
 " rails test
 nnoremap <leader>rl <cmd>RorTestRun Line<cr>
 nnoremap <leader>rf <cmd>RorTestRun<cr>
-
